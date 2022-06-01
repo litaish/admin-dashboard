@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 :root {
-
+    /* Light theme colors*/
+    --c-green: #65A30D;
+    --c-white-text: #FFFFFF;
+    --c-l-yellow: #FFFBEB;
+    --c-black-text: #1C1917;
+    --c-l-grey: #D4D4D4;
+    --c-d-yellow: #FBBF24;
+    --c-grey-text: #A1A1AA;
+    --c-dark-grey: #737373;
 }
 html {
     -webkit-box-sizing: border-box;
@@ -27,7 +35,41 @@ body {
 }
 .nav {
     grid-area: nav;
-    background-color: green;
+    display: grid;
+    grid-auto-rows: min-content;
+    row-gap: 2rem;
+    background-color: var(--c-green);
+    color: var(--c-white-text);
+}
+.nav-title {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1.5rem;
+}
+.nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav > * {
+    margin-left: 1rem;
+}
+.nav ul > li {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+}
+.nav ul > li a {
+    text-decoration: none;
+    color: var(--c-white-text);
+    border-bottom: 3px solid var(--c-green);
+    transition: 0.2s ease;
+}
+.nav ul > li a:hover {
+    border-bottom: 3px solid var(--c-d-yellow);
 }
 .header {
     grid-area: header;
