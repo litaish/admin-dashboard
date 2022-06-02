@@ -198,6 +198,9 @@ body {
     padding: 1.8rem 1rem 1.8rem 1rem;
     display: grid;
     grid-template-rows: min-content min-content auto;
+    box-shadow: -1px 1px 10px -1px rgba(158,158,158,0.71);
+    -webkit-box-shadow: -1px 1px 10px -1px rgba(158,158,158,0.71);
+    -moz-box-shadow: -1px 1px 10px -1px rgba(158,158,158,0.71);
 }
 .card-title {
     margin: 0 0 0.5rem 0;
@@ -272,6 +275,9 @@ body {
 .trending {
     border-radius: 0.4rem;
     padding: 1.5rem;
+    box-shadow: -1px 1px 10px -1px rgba(158,158,158,0.71);
+    -webkit-box-shadow: -1px 1px 10px -1px rgba(158,158,158,0.71);
+    -moz-box-shadow: -1px 1px 10px -1px rgba(158,158,158,0.71);
 }
 .handle,
 .account-title {
