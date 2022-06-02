@@ -100,18 +100,24 @@ body {
     border-radius: 25px;
     transition: 0.05s;
 }
+.header-search svg {
+    cursor: pointer;
+}
 .header-search input[type="text"]:focus {
 	outline: 2px solid var(--c-l-blue);
 }
 .header-profile {
-    display: grid;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 20%;
+    padding-top: 1.2rem;
     align-items: center;
-    justify-items: center;
-    grid-template-columns: 50px auto auto;
-    padding: 1.2rem 0 0.5rem 1.2rem;
 }
 .header-profile svg {
     color: var(--c-dark-grey);
+    cursor: pointer;
+
 }
 .header-profile p {
     color: var(--c-black-text);
