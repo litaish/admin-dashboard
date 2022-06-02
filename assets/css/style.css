@@ -175,12 +175,14 @@ body {
 .main-cards {
     display: grid;
     grid-template-rows: min-content auto;
+    padding-bottom: 1.5rem;
 }
 .main-cards > p {
     color: var(--c-black-text);
     font-weight: 600;
+    font-size: 1.1rem;
     margin-top: 1.5rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
 }
 .main-cards-inner {
     display: grid;
@@ -219,5 +221,60 @@ body {
     cursor: pointer;
 }
 .aside-content {
-    background-color: yellow;
+    background-color: var(--c-l-grey);
+    display: grid;
+    /* grid-template-rows: min-content 4fr min-content 3.8fr; */
+    grid-template-rows: min-content min-content min-content min-content;
+    padding: 0rem 1.2rem 1.2rem 1.2rem;
+    padding-left: 1.2rem;
+    padding-bottom: 1.5rem;
+}
+.aside-content > p {
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--c-black-text);
+}
+.announcements {
+    background-color: var(--c-white);
+}
+.announcement hr {
+    border: 1px solid var(--c-l-grey);
+}
+.announcement-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--c-black-text);
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+.announcement-text {
+    font-size: 0.9rem;
+    color: var(--c-grey-text);
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+.trending {
+    background-color: var(--c-white);
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap: 1.2rem;
+}
+.handle {
+    color: var(--c-black-text);
+    font-weight: 600;
+}
+.account-title {
+    color: var(--c-grey-text);
+}
+.announcements,
+.trending {
+    border-radius: 0.4rem;
+    padding: 1.5rem;
+}
+.handle,
+.account-title {
+    font-size: 0.9rem;
+    margin: 0.2rem;
 }
